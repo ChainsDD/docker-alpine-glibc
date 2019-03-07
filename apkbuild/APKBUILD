@@ -30,7 +30,7 @@ package() {
 
 bin() {
   depends="$pkgname libgcc"
-  mkdir "$subpkgdir"/usr/glibc-compat
+  mkdir -p "$subpkgdir"/usr/glibc-compat
   cp -a "$srcdir"/usr/glibc-compat/bin "$subpkgdir"/usr/glibc-compat
   cp -a "$srcdir"/usr/glibc-compat/sbin "$subpkgdir"/usr/glibc-compat
 }
